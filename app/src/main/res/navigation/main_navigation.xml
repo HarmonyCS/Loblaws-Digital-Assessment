@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/productListFragment">
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.darka11y.android.loblaws.screens.productlist.ProductListFragment"
+        android:label="@string/products_label"
+        tools:layout="@layout/product_list_fragment">
+        <action
+            android:id="@+id/action_productListFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.darka11y.android.loblaws.screens.productdetails.ProductDetailsFragment"
+        android:label="@string/product_details_label"
+        tools:layout="@layout/product_details_fragment">
+        <action
+            android:id="@+id/action_productDetailsFragment_to_productListFragment"
+            app:destination="@id/productListFragment"
+            app:popUpTo="@id/productListFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="selectedProduct"
+            app:argType="com.darka11y.android.loblaws.network.Entry" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeHolderFragment"
+        android:name="com.darka11y.android.loblaws.screens.PlaceHolderFragment"
+        android:label="@string/placeholder_label"
+        tools:layout="@layout/place_holder_fragment">
+        <action
+            android:id="@+id/action_placeHolderFragment_to_productListFragment"
+            app:destination="@id/productListFragment"
+            app:popUpTo="@id/placeHolderFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoblawsTakeHome</string>
+    <string name="placeholder_fragment_text">Place Holder Fragment</string>
+    <string name="placeholder_label">Place Holder</string>
+    <string name="product_details_label">Product Details</string>
+    <string name="products_label">Products</string>
+</resources>

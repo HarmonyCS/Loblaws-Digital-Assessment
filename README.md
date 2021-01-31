@@ -7,7 +7,7 @@ Instructions
 We, at Loblaw Digital, are responsible for the client-facing components of e-commerce applications. This means that we build and maintain lists of products that users can purchase. 
 
 Please create a small native application that has the following features:
-1. A network component that retrieves JSON from the endpoint. The documentation for this endpoint is on the Swagger page.
+1. A network component that retrieves JSON from the [Endpoint](https://gist.githubusercontent.com/r2vq/2ac197145db3f6cdf1a353feb744cf8e/raw/b1e722f608b00ddde138a0eef2261c6ffc8b08d7/cart.json). The documentation for this endpoint is on [Swagger](https://app.swaggerhub.com/apis-docs/Products-Sample/Products/1.0.0#/Product).
 2. A screen that shows a list of the retrieved products, their name, and their thumbnails.
 3. A second screen that opens when the user clicks on any of the products on the previous screen. This second screen should show the product details of the product from the first screen.
 
@@ -33,16 +33,6 @@ The app also leverages [ViewModel](https://developer.android.com/topic/libraries
 [Data Binding](https://developer.android.com/topic/libraries/data-binding/) with binding 
 adapters, and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/) 
 with the SafeArgs plugin for parameter passing between fragments.
-
-Endpoint
---------------
-- https://gist.githubusercontent.com/r2vq/2ac197145db3f6cdf1a353feb744cf8e/raw/b1e722f608b00ddde138a0eef2261c6ffc8b08d7/cart.json
-
-Swagger Documentation
----------------------
-
-https://app.swaggerhub.com/apis-docs/Products-Sample/Products/1.0.0#/Product
-
 
 Future Improvements
 -------------------
